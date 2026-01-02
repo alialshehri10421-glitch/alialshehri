@@ -21,4 +21,5 @@ if st.button("احسب المعدل"):
     elif نوع == "الكلية التقنية":
         average = (school*5 + gat*3 + saat*2) / 10
 
-    st.success(" المعدل التراكمي = {average}")
+st.success(f"المعدل التراكمي = {average:.2f}")
+
