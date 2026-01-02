@@ -1,7 +1,11 @@
 import streamlit as st
 
-st.title("حساب المعدل التراكمي")
+st.set_page_config(
+    page_title="حساب المعدل التراكمي",
+    layout="centered"
+)
 
+st.title("حساب المعدل التراكمي")
 نوع = st.selectbox(
     "اختر نوع المسار",
     ["علمي", "ادبي", "الكلية التقنية"]
@@ -22,6 +26,7 @@ if st.button("احسب المعدل"):
         average = (school*5 + gat*3 + saat*2) / 10
 
     st.success(f"المعدل التراكمي = {average:.2f}")
+
 
 
 
